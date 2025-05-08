@@ -1,0 +1,150 @@
+@import url(global.css);
+
+.estrutura {
+    display: grid;
+    grid-template-columns: 1fr 6fr 2fr;
+    gap: 40px;
+    padding: 40px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header img {
+    max-width: 30vw;
+}
+
+.header ul {
+    display: flex;
+    gap: 20px;
+}
+
+.header ul li {
+    padding: 10px 8px;
+    border-radius: 4px;
+}
+
+.header ul li a {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+header li:hover {
+    background-color: #af7dfa;
+    padding: 12px 10px;
+    transition: .3s;
+}
+
+.sidebar {
+    min-width: 70px;
+    max-width: 120px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.main h1 {
+    margin-bottom: 10px;
+}
+
+.rotulos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.numero {
+    padding: 15px;
+    display: block;
+    max-width: max-content;
+    font-size: 3rem;
+    border-radius: 4px 4px 0px 0px;
+    border: 2px solid black;
+    border-bottom: initial;
+}
+
+.rotulo {
+    min-width: max-content;
+    max-width: max-content;
+    display: block;
+    min-width: 100%;
+    box-sizing: border-box;
+    border-radius: 0px 0px 4px 4px;
+    border: 2px solid black;
+    border-top: initial;
+    padding: 5px;
+
+}
+
+.mx-wdt {
+    grid-column: 1 / -1;
+}
+
+.imagem-1 {
+    grid-row: span 2;
+}
+
+.imagem-2 {
+    grid-column: 2;
+}
+
+.block {
+    padding: 40px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.lista {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.lista ul li {
+    padding-top: 15px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid black ;
+}
+
+.paragrafo-5 p {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.margin {
+    margin-top: 20px;
+}
+
+.footer {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+@media (max-width:1100px) {
+    .estrutura {
+        grid-template-columns: 1fr 7fr;
+    }
+
+    aside {
+        display: flex;
+        justify-content: space-evenly;
+        grid-column: 2;
+        max-height: 250px;
+    }
+}
+
+
+
