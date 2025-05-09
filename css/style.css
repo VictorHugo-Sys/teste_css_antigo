@@ -1,0 +1,151 @@
+@import url(global.css);
+
+.estrutura {
+  display: grid;
+  grid-template-columns: 80px 6fr 2fr;
+  gap: 20px;
+  padding: 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav li {
+  padding: 12px 6px;
+  border-radius: 5px;
+  border: 2px solid #000;
+}
+
+.nav li:hover {
+  background-color: #af7dfa;
+}
+
+.svg {
+  max-width: 250px;
+}
+
+.sidebar {
+  min-width: 70px;
+  max-width: 120px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 800px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.rotulos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.numero {
+  padding: 15px;
+  display: block;
+  max-width: max-content;
+  font-size: 3rem;
+  border-radius: 4px 4px 0px 0px;
+  border: 2px solid black;
+  border-bottom: initial;
+}
+
+.rotulo {
+  min-width: max-content;
+  max-width: max-content;
+  display: block;
+  min-width: 100%;
+  box-sizing: border-box;
+  border-radius: 0px 0px 4px 4px;
+  border: 2px solid black;
+  border-top: initial;
+  padding: 5px;
+}
+
+.enfase {
+  grid-column: 1 / -1;
+}
+
+.imagem-1 {
+  grid-row: span 2;
+}
+
+.imagem-2 {
+  grid-column: 2;
+}
+
+.box {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px solid #c3c3c3;
+}
+
+.footer {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1100px) {
+  .estrutura {
+    grid-template-columns: 6fr 2fr;
+  }
+
+  .main {
+    grid-template-columns: 1fr;
+  }
+
+  .imagem-1 {
+    display: none;
+  }
+  
+  .imagem-2 {
+    max-width: 400px;
+    grid-column: 1;
+  }
+
+  .sidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+
+    .header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+      }
+
+    .estrutura {
+        grid-template-columns: 1fr;
+      }
+
+      .main {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+    aside {
+        display: flex;
+        gap: 20px;
+        margin-top: 80px;
+    }
+}
